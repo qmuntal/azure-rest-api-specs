@@ -44,9 +44,6 @@ jobs:
         fetchDepth: 2
 
       - template: /eng/common/pipelines/templates/steps/login-to-github.yml
-        parameters:
-          TokenOwners:
-            - azure
 
       - template: /eng/common/pipelines/templates/steps/sparse-checkout.yml
         parameters:

@@ -46,9 +46,6 @@ parameters:
 
 steps:
   - template: /eng/common/pipelines/templates/steps/login-to-github.yml
-    parameters:
-      TokenOwners:
-        - azure
 
   - bash: |
       echo "Repository Name: ${{ parameters.RepositoryName }}"

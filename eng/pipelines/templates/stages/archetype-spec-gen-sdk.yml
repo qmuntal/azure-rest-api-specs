@@ -179,9 +179,6 @@ stages:
           displayName: "Validate and update SDK repository commitish"
 
       - template: /eng/common/pipelines/templates/steps/login-to-github.yml
-        parameters:
-          TokenOwners:
-            - azure
 
       - template: /eng/common/pipelines/templates/steps/sparse-checkout.yml
         parameters:
