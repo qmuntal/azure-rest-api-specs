@@ -219,6 +219,7 @@ namespace Azure.AI.Projects {
     "TelemetryEndpointAuthenticationKind"
   );
   @@clientName(TelemetryDataKind, "ExportedDataTypes");
+  @@clientName(EvaluationLevel, "AgentsEvaluationLevel");
   // --------------------------------------------------------------------------------
   // Usage / Public accessibility overrides
   // --------------------------------------------------------------------------------

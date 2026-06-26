@@ -163,6 +163,7 @@ namespace Azure.AI.Projects;
 
 @@clientName(TaxonomySubCategory.enabled, "IsEnabled", "csharp");
 
+@@clientName(DeleteMemoryResponse, "MemoryDeletionResult", "csharp");
 @@clientName(DeleteMemoryStoreResponse.deleted, "IsDeleted", "csharp");
 
 @@clientName(MemoryStoreDefaultOptions.chat_summary_enabled,
@@ -232,9 +233,14 @@ namespace Azure.AI.Projects;
 @@clientName(Routines, "AIProjectRoutines");
 @@clientName(Routine, "ProjectsRoutine");
 @@access(Routines.createOrUpdateRoutine, Access.internal);
+@@clientName(Routines.createOrUpdateRoutine, "CreateOrUpdate");
 @@access(Routines.getRoutine, Access.internal);
+@@clientName(Routines.getRoutine, "Get");
 @@access(Routines.enableRoutine, Access.internal);
+@@clientName(Routines.enableRoutine, "Enable");
 @@access(Routines.disableRoutine, Access.internal);
+@@clientName(Routines.disableRoutine, "Disable");
 @@access(Routines.deleteRoutine, Access.internal);
-@@clientName(Routines.dispatchRoutineAsync, "dispatchAsyncRoutine", "csharp");
+@@clientName(Routines.deleteRoutine, "Delete");
+@@clientName(Routines.dispatchRoutineAsync, "Dispatch", "csharp");
 @@access(Routines.dispatchRoutineAsync, Access.internal);
